@@ -352,10 +352,11 @@ p {
 
 .marquee-track {
     display: flex;
-    gap: 80px;
+    gap: 0;
     animation: scroll-left 40s linear infinite;
     white-space: nowrap;
     padding: 20px 0;
+    width: max-content;
 }
 
 @keyframes scroll-left {
@@ -371,12 +372,16 @@ p {
     display: inline-flex;
     align-items: center;
     justify-content: center;
+    width: 280px;
     min-width: 280px;
+    max-width: 280px;
     height: 290px;
     transition: all 0.3s ease;
     position: relative;
     overflow: visible;
     flex-direction: column;
+    margin-right: 80px;
+    flex-shrink: 0;
 }
 
 .cloud-item:hover {
@@ -475,6 +480,24 @@ p {
     }
 }
 
+
+.faq-button {
+    max-width: 120px;
+    height: auto;
+    display: inline-block;
+    cursor: pointer;
+    transition: transform 0.2s ease, filter 0.2s ease;
+}
+
+.faq-button:hover {
+    transform: translateY(-5px) scale(1.06);
+    filter: drop-shadow(0 8px 16px rgba(245, 87, 108, 0.5));
+}
+
+.faq-button:active {
+    transform: scale(0.97);
+    filter: none;
+}
 
 .rsvp-button {
     max-width: 250px;
