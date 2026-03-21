@@ -26,8 +26,8 @@
         <img src="bob3.png" alt="" class="bob-decoration bob-3c">
         <!-- Hero Section -->
         <section class="hero">
-            <img src="Logo.png" alt="Re-Dream" class="hero-logo">
-            <div class="button-group">
+            <img src="Logo.png" alt="Re-Dream" class="hero-logo reveal">
+            <div class="button-group reveal reveal-delay-2">
                 <button class="img-btn rsvp-button"><img src="RSVP.png" alt="RSVP"></button>
                 <button class="img-btn faq-button"><img src="faq.png" alt="FAQ"></button>
             </div>
@@ -37,24 +37,24 @@
         
         <!-- About Section -->
         <section class="about">
-            <img src="hourMsg.png" alt="What is Re-Dream?" class="hour-msg">
+            <img src="hourMsg.png" alt="What is Re-Dream?" class="hour-msg reveal">
         </section>
         
         <!-- Projects Section -->
         <section class="projects-section">
-            <img src="shipMsg.png" alt="What Projects Can You Ship?" class="ship-msg">
+            <img src="shipMsg.png" alt="What Projects Can You Ship?" class="ship-msg reveal">
             <div class="projects-buttons">
-                <img src="button1.png" alt="A game you've always wanted to make" class="project-btn">
-                <img src="button2.png" alt="A useful script or tool" class="project-btn">
-                <img src="button4.png" alt="A mobile or web app" class="project-btn">
-                <img src="button3.png" alt="An old project you're proud of" class="project-btn">
-                <img src="button5.png" alt="Anything you can dream of" class="project-btn">
+                <img src="button1.png" alt="A game you've always wanted to make" class="project-btn reveal reveal-delay-1">
+                <img src="button2.png" alt="A useful script or tool" class="project-btn reveal reveal-delay-2">
+                <img src="button4.png" alt="A mobile or web app" class="project-btn reveal reveal-delay-3">
+                <img src="button3.png" alt="An old project you're proud of" class="project-btn reveal reveal-delay-4">
+                <img src="button5.png" alt="Anything you can dream of" class="project-btn reveal reveal-delay-5">
             </div>
         </section>
         
         <!-- Scrolling Rewards Section with Background -->
         <section class="rewards-scroll-section">
-            <h2 class="rewards-title">Code → Earn Prizes!</h2>
+            <h2 class="rewards-title reveal">Code → Earn Prizes!</h2>
             <div class="scrolling-marquee">
                 <div class="marquee-track">
                     <!-- var1 - Purple/Blue -->
@@ -230,11 +230,27 @@
         
         <!-- CTA Section -->
         <section class="cta">
-            <div class="cta-wrapper">
+            <div class="cta-wrapper reveal">
                 <img src="CTA.png" alt="Call to Action" class="cta-image">
                 <button class="img-btn cta-rsvp-button"><img src="RSVP.png" alt="RSVP"></button>
             </div>
         </section>
     </div>
+    <footer class="reveal">
+        <p>Made with Love by Skylar and Jordan! </p>
+    </footer>
+<script>
+    // Scroll reveal
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+                observer.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.15 });
+
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+</script>
 </body>
 </html></content>
