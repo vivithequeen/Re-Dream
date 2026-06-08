@@ -20,7 +20,7 @@
         <img src="bob1.png" alt="" class="bob-decoration bob-1c">
         <img src="bob2.png" alt="" class="bob-decoration bob-2a">
         <img src="bob2.png" alt="" class="bob-decoration bob-2b">
-        <img src="bob2.png" alt="" class="bob-decoration bob-2c">
+        <!-- <img src="bob2.png" alt="" class="bob-decoration bob-2c"> -->
         <img src="bob3.png" alt="" class="bob-decoration bob-3a">
         <img src="bob3.png" alt="" class="bob-decoration bob-3b">
         <!-- <img src="bob3.png" alt="" class="bob-decoration bob-3c"> -->
@@ -47,16 +47,16 @@
             <h2 class="section-title reveal">What can you ship?</h2>
             <p class="section-subtitle reveal reveal-delay-1">Your can ship any game at all!</p>
             <div class="cards-container reveal reveal-delay-2">
-                <div class="card blue">
-                    <div class="card-emoji"></div>
+                <div class="card var-card">
+                    <img src="var 1.png" alt="Variety 1" class="var-card-img">
                     <h3>A Rhythm Game</h3>
                 </div>
-                <div class="card pink">
-                    <div class="card-emoji"></div>
+                <div class="card var-card">
+                    <img src="var 4.png" alt="Variety 2" class="var-card-img">
                     <h3>A Platformer</h3>
                 </div>
-                <div class="card yellow">
-                    <div class="card-emoji"></div>
+                <div class="card var-card">
+                    <img src="var 3.png" alt="Variety 3" class="var-card-img">
                     <h3>A surreal horror game!!</h3>
                 </div>
             </div>
@@ -132,6 +132,46 @@
     <footer class="reveal">
         <p>Made with Love by Skylar and Jordan! </p>
     </footer>
+<style>
+    .var-card {
+        background: transparent;
+        border: none;
+        box-shadow: none;
+        padding: 0;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .var-card:hover {
+        transform: translateY(-10px);
+        box-shadow: none;
+    }
+    .var-card-img {
+        width: 100%;
+        height: auto;
+        display: block;
+        border-radius: 0;
+        /* remove black background on PNGs */
+        mix-blend-mode: multiply;
+    }
+    .var-card h3 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 60%;
+        text-align: center;
+        font-size: 1.25em;
+        font-weight: 900;
+        color: #3d2c5e;
+        margin: 0;
+        text-shadow: 0 1px 3px rgba(255,255,255,0.6);
+        pointer-events: none;
+        line-height: 1.3;
+    }
+</style>
 <script>
     // Scroll reveal
     const observer = new IntersectionObserver((entries) => {
