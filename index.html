@@ -16,24 +16,19 @@
     </style>
 </head>
 <body>
-    <!-- Header -->
     <header class="top-header">
-        <div class="header-content">
-        </div>
+        <div class="header-content"></div>
     </header>
 
     <div class="content">
-        <!-- Decorative Bobs -->
         <img src="bob1.png" alt="" class="bob-decoration bob-1a">
         <img src="bob1.png" alt="" class="bob-decoration bob-1b">
         <img src="bob1.png" alt="" class="bob-decoration bob-1c">
         <img src="bob2.png" alt="" class="bob-decoration bob-2a">
         <img src="bob2.png" alt="" class="bob-decoration bob-2b">
-        <!-- <img src="bob2.png" alt="" class="bob-decoration bob-2c"> -->
         <img src="bob3.png" alt="" class="bob-decoration bob-3a">
         <img src="bob3.png" alt="" class="bob-decoration bob-3b">
-        <!-- <img src="bob3.png" alt="" class="bob-decoration bob-3c"> -->
-        <!-- Hero Section -->
+
         <section class="hero">
             <img src="Logo.png" alt="Re-Dream" class="hero-logo reveal">
             <div class="button-group reveal reveal-delay-2">
@@ -41,8 +36,7 @@
                 <a href="faq.html" class="img-btn faq-button"><img src="faq.png" alt="FAQ"></a>
             </div>
         </section>
-       
-        <!--ABOUT SECTION-->
+
         <section class="about-section reveal">
             <div class="about-text-card">
                 <p class="about-intro">Every 10 hour devlog you ship you get 500 chips added to your budget!</p>
@@ -51,7 +45,6 @@
             </div>
         </section>
 
-        <!-- WHAT CAN YOU SHIP -->
         <section class="ship-section">
             <h2 class="section-title reveal">What can you ship?</h2>
             <p class="section-subtitle reveal reveal-delay-1">You can ship any game at all!</p>
@@ -71,26 +64,22 @@
             </div>
         </section>
 
-        <!-- HOW IT WORKS / CHIPS -->
         <section class="chips-section">
             <h2 class="section-title reveal">How does the budget work?</h2>
             <p class="section-subtitle reveal reveal-delay-1">Every 10 hours you code earns you <strong>500 chips</strong> to spend on your project.</p>
 
             <div class="chips-flow reveal reveal-delay-2">
                 <div class="chips-step">
-                    
                     <div class="chips-label">Log 10 Hours</div>
                     <div class="chips-desc">Submit a devlog every 10 hours</div>
                 </div>
-                <div class="chips-arrow">></div>
+                <div class="chips-arrow"> </div>
                 <div class="chips-step">
-                    
                     <div class="chips-label">Earn 500 Chips</div>
                     <div class="chips-desc">Gets added to your budget after your devlog is approved!</div>
                 </div>
-                <div class="chips-arrow">></div>
+                <div class="chips-arrow"> </div>
                 <div class="chips-step">
-                    
                     <div class="chips-label">Apply for Grants</div>
                     <div class="chips-desc">Spend chips on whatever you want for your project</div>
                 </div>
@@ -98,21 +87,18 @@
 
             <div class="grants-grid reveal reveal-delay-3">
                 <div class="grant-item">
-                    
                     <div class="grant-text">
                         <strong>Commission Art</strong>
                         <p>Make it look exactly how you imagined</p>
                     </div>
                 </div>
                 <div class="grant-item">
-                    
                     <div class="grant-text">
                         <strong>Buy Libraries</strong>
                         <p>Makes your life a lot easier when coding!</p>
                     </div>
                 </div>
                 <div class="grant-item steam-item">
-                    
                     <div class="grant-text">
                         <strong>Steam Publishing</strong>
                         <p>you can spend 1000 chips to publish your game to Steam!</p>
@@ -121,7 +107,6 @@
             </div>
         </section>
 
-        <!-- STICKERS BONUS -->
         <section class="stickers-section reveal">
             <div class="stickers-card">
                 <h3>Stickers!</h3>
@@ -129,7 +114,6 @@
             </div>
         </section>
 
-        <!-- DEMO GAME SECTION -->
         <section class="demo-section reveal">
             <div class="demo-container">
                 <div class="demo-text">
@@ -142,7 +126,6 @@
             </div>
         </section>
 
-        <!-- CTA Section -->
         <section class="cta">
             <div class="cta-wrapper reveal">
                 <img src="CTA.png" alt="Call to Action" class="cta-image">
@@ -150,61 +133,21 @@
             </div>
         </section>
     </div>
-    <footer class="reveal">
-        <p>Made with Love by Skylar and Jordan! </p>
-    </footer>
-<style>
-    .var-card {
-        background: transparent;
-        border: none;
-        box-shadow: none;
-        padding: 0;
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-    .var-card:hover {
-        transform: translateY(-10px);
-        box-shadow: none;
-    }
-    .var-card-img {
-        width: 100%;
-        height: auto;
-        display: block;
-        border-radius: 0;
-        /* remove black background on PNGs */
-        mix-blend-mode: multiply;
-    }
-    .var-card h3 {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        width: 60%;
-        text-align: center;
-        font-size: 1.25em;
-        font-weight: 900;
-        color: #3d2c5e;
-        margin: 0;
-        text-shadow: 0 1px 3px rgba(255,255,255,0.6);
-        pointer-events: none;
-        line-height: 1.3;
-    }
-</style>
-<script>
-    // Scroll reveal
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('visible');
-                observer.unobserve(entry.target);
-            }
-        });
-    }, { threshold: 0.15 });
 
-    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
-</script>
+    <footer class="reveal">
+        <p>Made with Love by Skylar and Jordan!</p>
+    </footer>
+
+    <script>
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.15 });
+        document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+    </script>
 </body>
 </html>
