@@ -100,9 +100,11 @@ p {
 .bob-1b { top: 1600px; left: 2%;  width: 70px; transform: scaleX(-1) rotate(10deg);   opacity: 0.8; }
 .bob-1c { top: 3000px; right: 6%; width: 80px; transform: rotate(8deg);               opacity: 0.85; }
 .bob-2a { top: 950px;  left: 3%;  width: 72px; transform: rotate(5deg);               opacity: 0.85; }
-.bob-2b { top: 2200px; right: 5%; width: 65px; transform: scaleX(-1) rotate(-8deg);   opacity: 0.8; }
+.bob-2b { top: 3900px; right: 5%; width: 65px; transform: scaleX(-1) rotate(-8deg);   opacity: 0.8; }
 .bob-3a { top: 1300px; right: 3%; width: 95px; transform: scaleX(-1) rotate(-4deg);   opacity: 0.9; }
 .bob-3b { top: 2700px; left: 3%;  width: 85px; transform: rotate(6deg);               opacity: 0.85; }
+.bob-4a { top: 3600px; left: 3%;  width: 90px; transform: rotate(6deg);               opacity: 0.85; }
+.bob-4b { top: 2200px; right: 3%; width: 105px; transform: rotate(-4deg);              opacity: 0.85; }
 
 /* About */
 .about-section { width: min(100%, 1400px); max-width: 1400px; padding: 60px 30px 20px; text-align: center; }
@@ -186,9 +188,9 @@ p {
 .grant-img:hover { transform: translateY(-4px); }
 
 /* Stickers */
-.stickers-section { max-width: 700px; margin: 0 auto 60px; padding: 0 30px; text-align: center; }
+.stickers-section { max-width: 1700px; margin: 0 auto 60px; padding: 0 30px; text-align: center; }
 
-.stickers-img { width: 100%; max-width: 500px; height: auto; display: block; margin: 0 auto; }
+.stickers-img { width: 100%; max-width: 750px; height: auto; display: block; margin: 0 auto; }
 
 /* Demo */
 .demo-section { padding: 80px 20px; margin: 60px auto; max-width: 1200px; }
