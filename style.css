@@ -26,10 +26,18 @@ body {
     padding: 125px 0;
 }
 
+.sponsors-img{
+    width: min(100%, 550px);
+    height: auto;
+    display: block;
+    margin: 0 auto 0px;
+    margin-left: 640px;
+}
+
 /* Hero */
 .hero {
     text-align: right;
-    margin-top: -180px;
+    margin-top: -105px;
     margin-bottom: -100px;
     padding: 20px 20px 60px;
     color: #181818; 
@@ -51,7 +59,7 @@ body {
     justify-content: center;
     flex-wrap: wrap;
     align-items: center;
-    margin: 40px 0;
+    margin: -40px 0;
 }
 
 .img-btn {
